@@ -13,13 +13,12 @@ if(NOT ANDROID)
 else()
 find_package(Boost REQUIRED)
 endif()
-find_package(OpenCV 2 REQUIRED
+find_package(OpenCV 3 REQUIRED
   COMPONENTS
     opencv_core
-    opencv_contrib
     opencv_imgproc
-    opencv_highgui
-#    opencv_imgcodecs
+    opencv_imgcodecs
+    opencv_cudaarithm
   CONFIG
 )
 
